@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensure no scrollbars appear */
+    background-image: url('bg_image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+}
+
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 102%;
+    background-image: url('bg_image.jpg'); /* Same image path as body background */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    filter: blur(4px); /* Apply blur effect */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+.container {
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+#a{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px px 0px 0px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#ab{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 66px;
+}
+
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9828ac;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+               3px 4px 4px rgba(179, 147, 211, 0.15),
+               4px 6px 4px rgba(179, 147, 211, 0.2),
+               5px 8px 4px rgba(179, 147, 211, 0.25);
+    
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+label {
+    flex: 1;
+    text-align: left;
+    color: #393939;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100px;
+    height: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #8e8c8c;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+
+/*------*/
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(500% 100% at 100% 0, #11099f 0, #3445c5 70%);
+  border: 0;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/*------*/
+
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+#result {
+    font-size: 32px;
+    margin-top: 15px;
+    font-weight: bolder;
+    color: #151515;
+}
