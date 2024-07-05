@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SGPA CALCULATOR</h1>
+        <form id="marksForm">
+            <div class="form-group">
+                <label id="ab"></label>
+                <label id="a">CIE Internal marks (50)</label>
+                <label id="a">Expected SEE marks (100)</label>
+            </div>
+            <div class="form-group">
+                <label for="Mathematics">Mathematics</label>
+                <input type="number" id="Mathematics" min="0" max="50" required>
+                <input type="number" id="Sub1" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="Physics">Physics</label>
+                <input type="number" id="Physics" min="0" max="50" required>
+                <input type="number" id="Sub2" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="POP">POP</label>
+                <input type="number" id="POP" min="0" max="50" required>
+                <input type="number" id="Sub3" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="ESC">ESC</label>
+                <input type="number" id="ESC" min="0" max="50" required>
+                <input type="number" id="Sub4" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="ETC">ETC</label>
+                <input type="number" id="ETC" min="0" max="50" required>
+                <input type="number" id="Sub5" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="English">English</label>
+                <input type="number" id="English" min="0" max="50" required>
+                <input type="number" id="Sub6" min="0" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="Kannada">Kannada</label>
+                <input type="number" id="Kannada" min="0" max="50" required>
+                <input type="number" id="Sub7" min="0" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="IDT">IDT</label>
+                <input type="number" id="IDT" min="0" max="50" required>
+                <input type="number" id="Sub8" min="0" max="50" required>
+            </div>
+            <button type="button" class="button-29" onclick="calculateGradePoints()">Calculate SGPA</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
